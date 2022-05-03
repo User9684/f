@@ -1,4 +1,4 @@
-import init from './modules/handlerStartup'
+import {init} from './modules/handlerStartup'
 
-const client = await init(process.env.token, './commands');
+const client = init(process.env.token, './commands');
 export {client}
